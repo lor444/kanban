@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+  
+  <display-name>Corso Java Kanban Web Application &amp; API</display-name>
+  
+  <context-param>
+  	<param-name>db.driver.class</param-name>
+    <param-value>org.postgresql.Driver</param-value>
+  </context-param>  
+  <context-param>
+  	<param-name>db.url</param-name>
+    <param-value>jdbc:postgresql://localhost:5432/kanban</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>db.user</param-name>
+    <param-value>corsosql</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>db.pass</param-name>
+    <param-value>corsosql</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>dao.factory.class</param-name>
+    <param-value>it.corsojava.kanban.persistence.impl.DaoFactoryImpl</param-value>
+  </context-param>
+  
+</web-app>
